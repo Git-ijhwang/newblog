@@ -42,16 +42,16 @@ function changeSmlImg(e) {
             <div className="text-white-50 mb-4">
               <div id="container">
                 <ul>
-                  <li> <img src={c} width="50" alt="test" /> </li>
-                  <li> <img src={react} width="50" alt="test" /> </li>
-                  <li> <img src={python} width="50" alt="test" /> </li>
-                  <li> <img src={php} width="50" alt="test" /> </li>
-                  <li> <img src={go} width="50" alt="test" /> </li>
-                  <li> <img src={mongo} width="50" alt="test" /> </li>
-                  <li> <img src={redis} width="50" alt="test" /> </li>
-                  <li> <img src={angular} width="50" alt="test" /> </li>
-                  <li> <img src={laravel} width="50" alt="test" /> </li>
-                  <li> <img src={wordpress} width="50" alt="test" /> </li>
+                  <li> <img src={c} width="50" alt="C" /> </li>
+                  <li> <img src={react} width="50" alt="React" /> </li>
+                  <li> <img src={python} width="50" alt="Python" /> </li>
+                  <li> <img src={php} width="50" alt="PHP" /> </li>
+                  <li> <img src={go} width="50" alt="Go" /> </li> 
+                  <li> <img src={angular} width="50" alt="Angular" /> </li>
+                  <li> <img src={wordpress} width="50" alt="Wordpress" /> </li>
+                  <li> <img src={laravel} width="50" alt="Laravel" /> </li>
+                  <li> <img src={mongo} width="50" alt="MongoDB" /> </li>
+                  <li> <img src={redis} width="50" alt="Redis" /> </li>
                 </ul>
               </div>
             </div>
@@ -70,14 +70,14 @@ function changeSmlImg(e) {
               Get Started!
             </a> */}
             <h4 className="text-white mt-0">
-              My Strenth
+              My Strength
             </h4>
 
             <p className="text-white-50 mb-4">
               Work experience as a network programmer base on the Linux environment.<br/>
               Committed, hard-working with self-motivated work ethic with the ability to work independently.<br/>
               Enthusiastic team player who is always willing to contribute.<br/>
-              Strong problem-sover.
+              Strong problem-solver.
             </p>
           </div>
         </div>

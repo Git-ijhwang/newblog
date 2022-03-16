@@ -22,7 +22,7 @@ class Portfolio extends React.Component {
       <div className="container-fluid p-0">
         <div className="col-12 text-center">
 
-          <Title title="What I did"/>
+          <Title title="Portfolio"/>
 
           <div className="row justify-content-center">
 
@@ -46,7 +46,7 @@ class Portfolio extends React.Component {
               />
 
             <Sub
-              name="Language: Laravel"
+              name="Framework: Laravel"
               category="Project: NSCC Fullstack blog"
               //description="It was very meaningful project that developed for NSCC Job fair event. I had taken the role to make Student Information Managing"
               src={laravel}
@@ -74,7 +74,7 @@ class Portfolio extends React.Component {
               />
 
             <Sub
-              name="Language: Django"
+              name="Framework: Django"
               category="Project: Sample Pizza order page"
               description="Linkedin eLearning Course"
               url="https://github.com/Git-ijhwang/Django_example.git"
@@ -85,7 +85,7 @@ class Portfolio extends React.Component {
 
             <Sub
               name="Language: Go Language"
-              category="Project: Excersize many type of short projects"
+              category="Project: Practice many types of short projects"
               //description="I learned how to use OKTA for user authentication."
               url="https://github.com/Git-ijhwang/Golan-Playground.git"
               src={Golang}

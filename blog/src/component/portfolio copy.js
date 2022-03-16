@@ -3,12 +3,16 @@ import $ from 'jquery';
 import Sub from "./subPortfolio";
 import "../css/styles.css";
 import { ParallaxHover } from 'react-parallax-hover';
+import { Slide } from 'react-slideshow-image';
+
+import 'react-slideshow-image/dis/style.css'
 // import ReactImageMagnify from 'react-image-magnify';
 // import ReactFancyBox from 'react-fancybox'
 // import 'react-fancybox/lib/fancybox.css'
 // import "bootstrap/js/src/collapse.js";
 // import "../../node_modules/jquery/dist/jquery.min.js";
 // mport "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
+
 
 import img1 from "../imgs/laravelblog.png";
 import img2 from "../imgs/reactblog.png";

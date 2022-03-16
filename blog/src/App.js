@@ -8,6 +8,8 @@ import Footer from './component/footer'
 // import $ from 'jquery';
 // import  "magnific-popup";
 import './css/styles.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import './js/scripts'
 // import $ from "jquery";
 // window.$ = window.jQuery = $;

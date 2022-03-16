@@ -79,13 +79,15 @@ class Contact extends React.Component {
                         <a className="d-block" href="mailto:hwangij@gmail.com">hwangij@gmail.com</a>
                     </div>
 !--> */}
+        {/* Sending Contact
+        
         <Mailtrap
                 data={this.state}
                 resetForm = {this.resetForm.bind(this)}
                 onNameChange = {this.onNameChange.bind(this)}
                 onEmailChange = {this.onEmailChange.bind(this)}
                 onMessageChange = {this.onMessageChange.bind(this)}
-        />
+        /> */}
             </div>
         </section>
   );
