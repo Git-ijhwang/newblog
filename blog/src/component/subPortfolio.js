@@ -20,9 +20,6 @@ class SubPortfolio extends React.Component {//({ name, category, src, src2 }) {
 
             <img className="port-image" src={this.props.src} width={imageWidth} height="auto" />
 
-
-
-
             <div className="middle">
               <div className="text_alt">
                 <p>{this.props.name}</p>

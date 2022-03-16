@@ -1,112 +1,98 @@
 import React from "react";
 import Sub from "./subPortfolio";
 import Title from "./title";
-import laravel from "../imgs/laravelblog.png";
-import react from "../imgs/reactblog.png";
-import TextBlog1 from "../imgs/blog.png";
-import JobFair_Project from "../imgs/jobfair.png";
-import TextBlog from "../imgs/myblog.png";
-import Django from "../imgs/Django.jpg";
-import Golang from "../imgs/golang.jpg";
-import Wordpress from "../imgs/wordpress.jpg";
-
+import SmartSlider from "react-smart-slider";
+import SlideShow from 'react-image-show';
+import img_laravel from "../imgs/laravelblog.png";
+import img_react from "../imgs/reactblog.png";
+import img_TextBlog1 from "../imgs/blog.png";
+import img_JobFair_Project from "../imgs/jobfair.png";
+import img_TextBlog from "../imgs/myblog.png";
+import img_Django from "../imgs/Django.jpg";
+import img_Golang from "../imgs/golang.jpg";
+import img_Wordpress from "../imgs/wordpress.jpg";
 
 import "../css/styles.css";
+const slideImages = [
+        img_laravel,
+        img_react,
+        img_TextBlog,
+        img_JobFair_Project,
+        img_Django,
+        img_Golang,
+        img_Wordpress
+];
 
-class Portfolio extends React.Component {
+const DummyCaption = ({ caption }) => (
+  <div style={{
+    position: 'absolute',
+    right: 100,
+    top: 250,
+    fontSize: 38,
+    padding: 55,
+    border: 'solid 1px',
+  }}>
+    {caption}
+  </div>
+);
+class Portfolio extends React.PureComponent {
+
   render() {
     const windowSize = this.props.windowWidth;
+    const slidesArray = [
+      {
+        url:img_laravel,
+        childrenElem: <DummyCaption caption="Caption 1"/>
+      },
+      {
+        url:img_react,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+      {
+        url:img_TextBlog1,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+      {
+        url:img_JobFair_Project,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+      {
+        url:img_TextBlog,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+      {
+        url:img_Django,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+      {
+        url:img_Golang,
+        childrenElem: <DummyCaption caption="Caption 2"/>
+      },
+    ];
   return (
+
 
     <section className="page-section pf-primary" id="portfolio" >
       <div className="container-fluid p-0">
         <div className="col-12 text-center">
 
           <Title title="Portfolio"/>
+          {/* <SmartSlider slides={slidesArray} buttonShape="round"/> */}
+          <SlideShow
+        images={slideImages}
+        width="920px"
+        imagesWidth="800px"
+        imagesHeight="450px"
+        imagesHeightMobile="56vw"
+        thumbnailsWidth="920px"
+        thumbnailsHeight="12vw"
+        infinite indicators thumbnails fixedImagesHeight
+      />
 
-          <div className="row justify-content-center">
-
-            <Sub
-              name="Language: React, NodeJS, MongoDB"
-              category="Project: Simple Text Blog"
-              //description="It was very meaningful project that developed for NSCC Job fair event. I had taken the role to make Student Information Managing"
-              src={TextBlog1}
-              // src2={laravel}
-              // size={this.props.windowWidth}
-              size={windowSize}
-              />
-
-            <Sub
-              name="Language: PHP and Laravel"
-              category="Job Fair Project"
-              // description="It was very meaningful project that developed for NSCC Job fair event. I had taken the role to make Student Information Managing"
-              src={JobFair_Project}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="Framework: Laravel"
-              category="Project: NSCC Fullstack blog"
-              //description="It was very meaningful project that developed for NSCC Job fair event. I had taken the role to make Student Information Managing"
-              src={laravel}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="Language: React, NodeJS"
-              category="Project: NSCC React FullStack Project"
-              //description="I learned how to use OKTA for user authentication."
-              src={react}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="Language: React, NodeJS, Okta"
-              category="Project: Basic CRUD App "
-              //description="I learned how to use OKTA for user authentication."
-              url="https://github.com/Git-ijhwang/CRUD_blog.git"
-              src={TextBlog}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="Framework: Django"
-              category="Project: Sample Pizza order page"
-              description="Linkedin eLearning Course"
-              url="https://github.com/Git-ijhwang/Django_example.git"
-              src={Django}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="Language: Go Language"
-              category="Project: Practice many types of short projects"
-              //description="I learned how to use OKTA for user authentication."
-              url="https://github.com/Git-ijhwang/Golan-Playground.git"
-              src={Golang}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-            <Sub
-              name="CMS: WordPress"
-              category="I learned the WP REST API to Create Custom & Interactive WordPress Websites"
-              description="UDEMY eLearning Course"
-              // url="https://github.com/Git-ijhwang/Golan-Playground.git"
-              src={Wordpress}
-              // size={this.props.windowWidth}/>
-              size={windowSize}
-              />
-
-          </div>
         </div>
       </div>
     </section>
+
   );
 }
 }
