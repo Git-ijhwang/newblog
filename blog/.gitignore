@@ -10,16 +10,22 @@
 
 # production
 /build
-/src/component/portfolio copy 2.js
+
+/src/component/*copy*.js
 /src/component/portfolio copy 3.js
+
 /src/component/portfolio copy 4.js
 /src/component/portfolio copy 5.js
+
 /src/component/Slideshow copy.js
+
 /src/component/subPortfolio copy.js
 /src/component/subPortfolio copy 2.js
+
 /src/component/nav copy.js
 /src/component/nav copy 2.js
-/css/stylebk.css
+
+/src/css/stylesbk.css
 
 
 # misc
